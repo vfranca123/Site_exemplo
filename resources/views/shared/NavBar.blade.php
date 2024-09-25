@@ -1,22 +1,24 @@
-<nav class="navbar bg-black">
+<nav class="navbar" style=" background-color: #8B4513;">
 
     <div class="container-fluid">
         
 
-        <div class="col-md-3 d-flex flex-row">
+        <div class="col-md-12 d-flex flex-row">
             
-        <a class="nav-link m-3" href="#"><h1 class="text-light"> Music</h1></a>
-            <a class="nav-link m-3" href="#">
-                <h1 class="fa-solid fa-house text-light"></h1>
+            <a class="nav-link m-3 col-md-6" href="{{route('Index')}}">
+                <h1 class="text-light"> Music</h1>
             </a>
-            <a class="nav-link m-3" href="#">
-                <h1 class="fa-solid fa-wallet text-light"></h1>
+            <a class="nav-link m-3 col-md-1 text-light" href=" {{ route('Produtos.Index') }}">
+                Produtos
             </a>
-            <a class="nav-link m-3" href="#">
-                <h1 class="fa-solid fa-user text-light"></h1>
+            <a class="nav-link m-3 col-md-1 text-light" href="#">
+                Contatos
             </a>
-            <a class="nav-link m-3" href="#">
-                <h1 class="fa-solid fa-door-open text-warning"></h1>
+            <a class="nav-link m-3 col-md-1 text-light" href="#">
+                 Informaçoes
+            </a>
+            <a class="nav-link m-3 col-md-13 text-primary" href="#">
+                Login
             </a>
         </div>
 
