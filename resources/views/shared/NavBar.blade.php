@@ -8,13 +8,13 @@
             <a class="nav-link m-3 col-md-6" href="{{route('Index')}}">
                 <h1 class="text-light"> Music</h1>
             </a>
-            <a class="nav-link m-3 col-md-1 text-light" href=" {{ route('Produtos.Index') }}">
+            <a class="nav-link m-3 col-md-1 text-light" href="#produtos">
                 Produtos
             </a>
-            <a class="nav-link m-3 col-md-1 text-light" href="#">
+            <a class="nav-link m-3 col-md-1 text-light" href="#footer">
                 Contatos
             </a>
-            <a class="nav-link m-3 col-md-1 text-light" href="#">
+            <a class="nav-link m-3 col-md-1 text-light" href="#footer">
                  Informaçoes
             </a>
             <a class="nav-link m-3 col-md-13 text-primary" href="#">

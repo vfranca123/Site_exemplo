@@ -9,10 +9,8 @@ class DashboardController extends Controller
 {
     public function index(){
         $produtos=Produto::orderBy('created_at', 'DESC');
-        return view('Index',['produtos'=> $produtos]);
+        return view('Index',['produtos'=> $produtos->paginate(5)]);
     }
 
-    public function IndexProdutos(){
-        return view('produtos.IndexProdutos');
-    }
+    
 }
