@@ -7,9 +7,15 @@
         
         <div class="carousel-inner">
             <div class="carousel-item active d-flex justify-content-center">
-                <img src="/storage/produtos/1.jpeg" class="d-block w-20 m-4" alt="..." style="height: 50vh; ">
-                <img src="/storage/produtos/2.jpg" class="d-block w-20 m-4" alt="..." style="height: 50vh; ">
-                <img src="/storage/produtos/3.jpg" class="d-block w-20 m-4" alt="..." style="height: 50vh; ">
+                @if (count($produtos) > 0)
+                    @foreach ($produtos as $produto)
+                        <div>
+                            {{ $produto->links($produto) }}
+                        </div>
+                    @endforeach
+                @else
+                    <h1 class="m-4 text-white">nenhum produto encontrado</h1>
+                @endif
             </div>
             <div class="carousel-item">
                 <img src="/storage/produtos/2.jpg" class="d-block w-20" alt="...">
