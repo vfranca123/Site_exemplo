@@ -17,9 +17,18 @@
             <a class="nav-link m-3 col-md-1 text-light" href="#footer">
                  Informaçoes
             </a>
-            <a class="nav-link m-3 col-md-13 text-primary" href="#">
-                Login
+
+            @auth
+                <a href="{{ route('logout') }}" class="nav-link m-3 col-md-13 text-warning">
+                    <i class="fa-solid fa-door-open fs-3"></i>
+                </a>
+            @endauth
+            @guest
+            <a class="nav-link m-3 col-md-13 text-primary" href="{{route('login.Index')}}">
+                <i class="fa-solid fa-user fs-3"></i>
             </a>
+            @endguest
+            
         </div>
 
     </div>
