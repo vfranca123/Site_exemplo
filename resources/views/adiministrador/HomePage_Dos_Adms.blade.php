@@ -1,4 +1,5 @@
-@extends('layout.layout')
+@extends('layout.layoutAdms')
 @section('content')
-    <div class="vh-100"></div>
+    
+     @include('shared.flash')
 @endsection

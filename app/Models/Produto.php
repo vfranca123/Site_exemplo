@@ -33,4 +33,9 @@ class Produto extends Model
         } return null;
         
     }
+
+    public function categoria()
+    {
+        return $this->belongsTo(Categoria::class);
+    }
 }
