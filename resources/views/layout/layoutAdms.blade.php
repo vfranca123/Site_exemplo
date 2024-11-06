@@ -14,7 +14,7 @@
     <title>Home Page Adiministrador</title>
 </head>
 <body>
-    <div class="d-flex telaFull border" style="background-color:#F4F4F5" >
+    <div class="d-flex telaFull col-md-12" style="background-color:#F4F4F5" >
         <div>@include('shared.NavAdms')</div>
         <div>@yield('content')</div>
     </div>

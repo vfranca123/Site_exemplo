@@ -1,5 +1,5 @@
 
-<ul class="nav flex-column col-md-12">
+<ul class="nav flex-column">
    
     <img  class="col-md-6 m-3" src="storage/aplicação/logo.png" alt="">    
     

@@ -33,7 +33,7 @@
 
         <li class="nav-item">
             @auth
-                <a href="{{ route('logout') }}" class="nav-link m-3 col-md-13 text-warning">
+                <a href="{{ route('Adiministrador.Index') }}" class="nav-link m-3 col-md-13 text-primary">
                     <i class="fa-solid fa-door-open fs-3"></i>
                 </a>
             @endauth
