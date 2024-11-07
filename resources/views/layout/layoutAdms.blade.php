@@ -15,8 +15,8 @@
 </head>
 <body>
     <div class="d-flex telaFull col-md-12" style="background-color:#F4F4F5" >
-        <div>@include('shared.NavAdms')</div>
-        <div>@yield('content')</div>
+        <div class="col-md-2">@include('shared.NavAdms')</div>
+        <div class="col-md-10">@yield('content')</div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>

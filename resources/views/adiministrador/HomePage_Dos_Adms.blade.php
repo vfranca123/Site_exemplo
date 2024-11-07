@@ -1,23 +1,19 @@
 @extends('layout.layoutAdms')
 @section('content')
     @include('shared.flashs.flash')
-    <div class="d-flex row">
+    <div class="d-flex row p-3">
 
-        <div class="card col-md-5 m-3">
-            <h5 class="card-header">Pedidos pendendentes</h5>
-            <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="text-primary">ver todos</a>
-            </div>
+        <div class="col-md-5 boder rounded-3 bg-white m-1">
+            <h5 class="mt-1">Pedidos pendendentes</h5>
+            <hr>
+                
+            <a href="#" class="text-primary">ver todos</a>
+            
         </div>
 
-        <div class="card col-md-5 m-3">
-            <h5 class="card-header">Administradores</h5>
-            <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-
+        <div class="col-md-5 boder rounded-3 bg-white m-1">
+            <h5 class="mt-1">Administradores</h5>
+            <hr>
                 @if (count($Users) > 0)
                     @foreach ($Users as $user)
                         <div>
@@ -33,7 +29,7 @@
                     </a>
                     <a href="#" class="text-primary">ver todos</a>
                 </div>
-            </div>
+            
         </div>
 
     </div>
