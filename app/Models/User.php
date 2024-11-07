@@ -44,4 +44,21 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    public function FotoUser(){
+        return $this->hasOne(FotoUser ::class,'user_id','id');       
+    }
+
+    public function getImageURL(){
+        if($this->FotoUser){
+            return asset("storage/{$this->FotoUser->img}");
+        } return null;
+        
+    }
+
+     public function links($user){
+        return view('adiministrador.adiministradoresCard',['user'=>$user]);
+    } 
+    
+    
 }

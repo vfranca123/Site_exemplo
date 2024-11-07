@@ -16,7 +16,7 @@
     @include('shared.NavBar')
     
     <div style=" background: linear-gradient(to top, #000000, #8B4513);">
-        @include('shared.flash')
+        @include('shared.flashs.flash')
         @yield('content')
     </div>
 
